@@ -11,11 +11,15 @@ public class Main {
         tree.tambahPegawai("ManagerA", "Staff1", "kiri");
         tree.tambahPegawai("ManagerA", "Staff2", "kanan");
         tree.tambahPegawai("ManagerB", "Staff3", "kiri");
-
+        
+        //Preorder Traversal
         tree.cetakPreOrder();
 
         // MENAMBAHKAN: Tampilkan urutan pegawai menggunakan Inorder Traversal
         tree.cetakInOrder();
+
+        //Cetak postorder
+        tree.cetakPostOrder();
 
         // Contoh: Print Parent 'n Child
         tree.cetakHubungan("ManagerA");

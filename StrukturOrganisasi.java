@@ -151,4 +151,23 @@ public class StrukturOrganisasi {
         }
     }
 
+    
+    //Print Postorder Traversal
+    public void cetakPostOrder() {
+        System.out.println("\nUrutan Pegawai (Postorder Traversal):");
+        postOrder(root);
+        System.out.println();
+    }
+
+    // Fungsi utama rekursif Postorder (Kiri -> Kanan -> Root)
+    private void postOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        postOrder(node.left);              // 1. Telusuri anak kiri terlebih dahulu
+        postOrder(node.right);             // 2. Telusuri anak kanan kedua
+        System.out.print(node.nama + " "); // 3. Cetak nama pegawai terakhir
+    }
+
+
 }
