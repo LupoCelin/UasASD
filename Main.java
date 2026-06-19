@@ -13,16 +13,17 @@ public class Main {
         tree.tambahPegawai("ManagerB", "Staff3", "kiri");
 
         tree.cetakPreOrder();
-
-        // MENAMBAHKAN: Tampilkan urutan pegawai menggunakan Inorder Traversal
-        tree.cetakInOrder();
-
+        
         // Contoh: Print Parent 'n Child
         tree.cetakHubungan("ManagerA");
         tree.cetakHubungan("Staff3");
 
         // Contoh: Hapus Node
         tree.hapusPegawai("ManagerB");
+
+        // NO 3 : Tampilkan urutan pegawai menggunakan Inorder Traversal
+        tree.cetakInOrder();
+
 
 
 
