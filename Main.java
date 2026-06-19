@@ -12,7 +12,7 @@ public class Main {
         tree.tambahPegawai("ManagerA", "Staff2", "kanan");
         tree.tambahPegawai("ManagerB", "Staff3", "kiri");
         
-        //Preorder Traversal
+        //Preorder
         tree.cetakPreOrder();
 
         // MENAMBAHKAN: Tampilkan urutan pegawai menggunakan Inorder Traversal

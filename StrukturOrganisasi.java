@@ -135,14 +135,14 @@ public class StrukturOrganisasi {
         }
     }
 
-    // MENAMBAHKAN: Print InOrder Traversal
+    // NO 3 : Print InOrder Traversal
     public void cetakInOrder() {
         System.out.println("\nUrutan Pegawai (InOrder Traversal):");
         inOrderTraversal(root);
         System.out.println();
     }
 
-    // MENAMBAHKAN: Fungsi rekursif InOrder (Kiri -> Root -> Kanan)
+    // NO 3 : Fungsi rekursif InOrder (Kiri -> Root -> Kanan)
     private void inOrderTraversal(Node current) {
         if (current != null) {
             inOrderTraversal(current.left); // Kunjungi anak kiri
