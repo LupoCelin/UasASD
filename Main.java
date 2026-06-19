@@ -12,6 +12,8 @@ public class Main {
         tree.tambahPegawai("ManagerA", "Staff2", "kanan");
         tree.tambahPegawai("ManagerB", "Staff3", "kiri");
 
+        tree.cetakPreOrder();
+
         // Contoh: Print Parent 'n Child
         tree.cetakHubungan("ManagerA");
         tree.cetakHubungan("Staff3");

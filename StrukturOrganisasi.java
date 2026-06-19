@@ -122,4 +122,17 @@ public class StrukturOrganisasi {
         System.out.println("Bawahan (Child Kiri)  : " + (target.left != null ? target.left.nama : "-"));
         System.out.println("Bawahan (Child Kanan) : " + (target.right != null ? target.right.nama : "-"));
     }
+    public void cetakPreOrder(){
+        System.out.println("\nUrutan Pegawai (PreOrder Traversal):");
+        preOrderTraversal(root);
+        System.out.println();
+    }
+    private void preOrderTraversal(Node current) {
+        if (current != null) {
+            System.out.print(current.nama + " ");
+            preOrderTraversal(current.left);
+            preOrderTraversal(current.right);
+        }
+    }
+
 }
